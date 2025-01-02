@@ -14,6 +14,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'i.pravatar.cc',
             },
+            {
+                protocol: 'https',
+                hostname: 'via.placeholder.com', // Add placeholder.com domain
+            },
         ],
     },
 };
