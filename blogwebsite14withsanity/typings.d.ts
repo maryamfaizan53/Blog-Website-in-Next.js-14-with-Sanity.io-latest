@@ -1,4 +1,6 @@
 type Post = {
+  _id: Key | null | undefined;
+  comments: boolean;
   title: string;
   summary: string;
   image: {
