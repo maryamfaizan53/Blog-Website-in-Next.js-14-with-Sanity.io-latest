@@ -59,7 +59,7 @@ export default async function SinglePostPage({ params: { slug } }: { params: { s
         </div>
       </section>
 
-      <section className="prose">
+      <section className="prose text-white">
         <PortableText value={post.content} />
       </section>
 
@@ -72,7 +72,7 @@ export default async function SinglePostPage({ params: { slug } }: { params: { s
               <li key={comment._id} className="border p-4 rounded">
                 <p className="font-semibold">{comment.name}</p>
                 <p>{comment.comment}</p>
-                <p className="text-xs text-gray-500">
+                <p className="text-xs text-white">
                   {new Date(comment._createdAt).toLocaleString()}
                 </p>
               </li>

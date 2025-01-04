@@ -3,6 +3,8 @@ import { client } from "../../sanity/lib/client";
 import Hero from "@/components/Hero"
 import CategoryList from "@/components/CategoryList"
 
+import CommentForm from "@/components/CommentForm";
+
 // export interface Post {
 //   _id: string;
 //   slug: string;
@@ -78,6 +80,9 @@ export default async function Home() {
           <p>No blogs available.</p>
         )}
       </section>
+
+ 
+
     </main>
   )
 }

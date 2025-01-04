@@ -30,9 +30,9 @@ export default function Footer() {
       
         <div>
           <p className="text-xs text-light">
-            © 2024 <span className="text-light font-bold">&nbsp;DEV</span>
+            © 2025 <span className="text-light font-bold">&nbsp;Fashion</span>
             <span className="text-accentDarkPrimary font-bold">
-              LAB&nbsp;
+              Fusion&nbsp;
             </span>{" "}
             All rights reserved.
           </p>

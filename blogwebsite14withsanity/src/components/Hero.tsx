@@ -33,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({
           {subtitle}
         </p>
 
-        <Link href={buttonLink}
+        <Link href="/categories"
           className="inline-block bg-white hover:bg-pink-600 text-gray-900 font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300">
             {buttonLabel}
           

@@ -15,6 +15,13 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
+        <Link
+            href="/"
+            className="text-white font-bold hover:text-black transition duration-200"
+          >
+            Home
+          </Link>
+
           <Link
             href="/about"
             className="text-white font-bold hover:text-black transition duration-200"
@@ -22,19 +29,14 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            href="/about"
+            href="/categories"
             className="text-white font-bold hover:text-black transition duration-200"
           >
             Catagories
           </Link>
+        
           <Link
-            href="/about"
-            className="text-white font-bold hover:text-black transition duration-200"
-          >
-            Featured
-          </Link>
-          <Link
-            href="/about"
+            href="/comments"
             className="text-white font-bold hover:text-black transition duration-200"
           >
             Add Blogs
