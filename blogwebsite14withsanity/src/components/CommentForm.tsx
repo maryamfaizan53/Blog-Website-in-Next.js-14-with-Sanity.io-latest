@@ -1,6 +1,5 @@
-// components/CommentForm.tsx
-"use client"; 
-import React, { useState } from "react";
+"use client";
+import React, { useState, FormEvent } from "react";
 
 interface CommentFormProps {
   postId: string;
@@ -13,7 +12,7 @@ export default function CommentForm({ postId }: CommentFormProps) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
     setSuccess("");
@@ -26,6 +25,9 @@ export default function CommentForm({ postId }: CommentFormProps) {
     try {
       const res = await fetch("/api/createComment", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json", // <-- Important
+        },
         body: JSON.stringify({
           name,
           email,
@@ -56,7 +58,9 @@ export default function CommentForm({ postId }: CommentFormProps) {
       {success && <p className="text-green-500">{success}</p>}
 
       <div>
-        <label htmlFor="name" className="block font-semibold mb-1">Name</label>
+        <label htmlFor="name" className="block font-semibold mb-1">
+          Name
+        </label>
         <input
           id="name"
           type="text"
@@ -67,7 +71,9 @@ export default function CommentForm({ postId }: CommentFormProps) {
       </div>
 
       <div>
-        <label htmlFor="email" className="block font-semibold mb-1">Email</label>
+        <label htmlFor="email" className="block font-semibold mb-1">
+          Email
+        </label>
         <input
           id="email"
           type="email"
@@ -78,7 +84,9 @@ export default function CommentForm({ postId }: CommentFormProps) {
       </div>
 
       <div>
-        <label htmlFor="comment" className="block font-semibold mb-1">Comment</label>
+        <label htmlFor="comment" className="block font-semibold mb-1">
+          Comment
+        </label>
         <textarea
           id="comment"
           className="w-full border rounded p-2"
