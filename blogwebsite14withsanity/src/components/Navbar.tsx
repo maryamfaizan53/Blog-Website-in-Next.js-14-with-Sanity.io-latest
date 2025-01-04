@@ -6,24 +6,42 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="flex justify-between items-center px-6 py-4 md:px-10 max-w-[1200px] mx-auto">
+    <header className="bg-pink-700  shadow-md">
+      <div className="flex justify-between items-center px-6 py-4 md:px-10 max-w-[1500px] mx-auto">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-blue-600">
-          Sanity Blog
+        <Link href="/" className="text-2xl font-bold text-white  hover:text-black transition duration-200">
+        Fashion Fusion
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
           <Link
             href="/about"
-            className="text-gray-700 hover:text-blue-600 transition duration-200"
+            className="text-white font-bold hover:text-black transition duration-200"
           >
             About
           </Link>
           <Link
+            href="/about"
+            className="text-white font-bold hover:text-black transition duration-200"
+          >
+            Catagories
+          </Link>
+          <Link
+            href="/about"
+            className="text-white font-bold hover:text-black transition duration-200"
+          >
+            Featured
+          </Link>
+          <Link
+            href="/about"
+            className="text-white font-bold hover:text-black transition duration-200"
+          >
+            Add Blogs
+          </Link>
+          <Link
             href="/contact"
-            className="text-gray-700 hover:text-blue-600 transition duration-200"
+               className="text-white font-bold hover:text-black transition duration-200"
           >
             Contact
           </Link>
@@ -31,7 +49,7 @@ const Navbar = () => {
 
         {/* Hamburger Menu for Mobile */}
         <button
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="md:hidden text-white  hover:text-black transition duration-200 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
@@ -53,12 +71,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-white shadow-md">
+        <nav className="md:hidden bg-pink-700 shadow-md">
           <ul className="flex flex-col gap-4 p-4">
             <li>
               <Link
                 href="/about"
-                className="text-gray-700 hover:text-blue-600 transition duration-200"
+                className="text-white hover:text-black transition duration-200"
                 onClick={() => setMenuOpen(false)}
               >
                 About
@@ -67,7 +85,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/contact"
-                className="text-gray-700 hover:text-blue-600 transition duration-200"
+               className="text-white hover:text-black transition duration-200"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact
