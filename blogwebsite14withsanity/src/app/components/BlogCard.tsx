@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { urlForImage } from "../../sanity/lib/image";
+import { urlForImage } from "../../../sanity/lib/image";
 
 export default function BlogCard({ post }: { post: Post }) {
   return (

@@ -1,9 +1,9 @@
-import BlogCard from "@/components/BlogCard"
+import BlogCard from "@/app/components/BlogCard"
 import { client } from "../../sanity/lib/client";
-import Hero from "@/components/Hero"
-import CategoryList from "@/components/CategoryList"
+import Hero from "@/app/components/Hero"
+import CategoryList from "@/app/components/CategoryList"
 
-import CommentForm from "@/components/CommentForm";
+import CommentForm from "@/app/components/CommentForm";
 
 // export interface Post {
 //   _id: string;

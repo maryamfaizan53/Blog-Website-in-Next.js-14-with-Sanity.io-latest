@@ -3,7 +3,7 @@ import Image from "next/image";
 import { client } from "../../../../sanity/lib/client";
 import { urlForImage } from "../../../../sanity/lib/image";
 import { PortableText } from "@portabletext/react";
-import CommentForm from "@/components/CommentForm"; // <--- import here
+import CommentForm from "@/app/components/CommentForm"; // <--- import here
 
 export default async function SinglePostPage({ params: { slug } }: { params: { slug: string } }) {
   // 1. Query to fetch post details

@@ -4,7 +4,7 @@ import {
   Linkedin,
   Twitter,
   Youtube,
-} from "@/components/icons";
+} from "@/app/components/icons";
 import Link from "next/link";
 
 export default function SocialMedia() {

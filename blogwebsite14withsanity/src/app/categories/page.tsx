@@ -1,6 +1,6 @@
 // pages/categories.tsx
 import { NextPage } from "next";
-import CategoryList from "@/components/CategoryList"; // <--- import here
+import CategoryList from "@/app/components/CategoryList"; // <--- import here
 
 const categories = [
   { name: "Trends", slug: "trends" },
